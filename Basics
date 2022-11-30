@@ -1,0 +1,46 @@
+1. Read an input image and display the size of the image.
+
+from PIL import Image 
+# import ImageEnhance
+img = Image.open('/content/drive/MyDrive/Colab Notebooks/lina.jpg')
+s = img.size
+print(s)
+display(img)
+******************************************************************************************************************************
+2. Read an input image and resize the image to half of its resolution.
+
+from PIL import Image
+img2 = Image.open('/content/drive/MyDrive/Colab Notebooks/lina.jpg')
+img= img2.resize((s[0]//2,s[1]//2))
+display(img2)
+print()
+display(img)
+print(img.size)
+******************************************************************************************************************************
+3. Read an image and enhance the brightness of an image.
+
+from PIL import Image,ImageEnhance
+img = Image.open('/content/drive/MyDrive/Colab Notebooks/lina.jpg')
+display(img)
+converter = ImageEnhance.Brightness(img)
+img2 = converter.enhance(0.5)
+img3 = converter.enhance(2)
+display(img2)
+display(img3)
+******************************************************************************************************************************
+4. Read an input image and implement the gray level transformation techniques.
+
+1. Read an input image and display the size of the image.
+2. Read an input image and resize the image to half of its resolution.
+3. Read an image and enhance the brightness of an image.
+4. Read an input image and implement the gray level transformation techniques.
+5. Read an image and implement the contranst enhancement.
+6. Implement smoothing filter to enhance an image.
+7. Implement sharpening filter on an input image.
+
+import PIL form PIL
+import ImageEnhance
+img = PIL.Image.open('')
+converter =ImageEnhance.Brightness(img)
+img2 = converter.enhance(0.5)
+img3 = converter.enhance(2)
